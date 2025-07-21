@@ -449,6 +449,8 @@
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#enroll">Enroll Now</a></li>
+                <li><a href="#complaint">Complaint</a></li>
+
             </ul>
         </div>
     </nav>
@@ -631,6 +633,45 @@
             </div>
         </div>
     </section>
+    <section class="contact" id="complaint" style="background-color: #fff; padding: 60px 20px;">
+  <div class="container">
+    <h2 class="section-title">Complaint Form</h2>
+    <div class="contact-form">
+      <h3>Submit Your Complaint</h3>
+      <form action="https://formsubmit.co/puhansushil199@gmail.com" method="POST">
+        <div class="form-group">
+          <label for="complainant-name">Your Name</label>
+          <input type="text" id="complainant-name" name="complainant_name" required>
+        </div>
+        <div class="form-group">
+          <label for="complainant-email">Your Email</label>
+          <input type="email" id="complainant-email" name="complainant_email" required>
+        </div>
+        <div class="form-group">
+          <label for="complaint-type">Type of Complaint</label>
+          <select id="complaint-type" name="complaint_type" required>
+            <option value="">Select an Option</option>
+            <option value="Facility Issue">Facility Issue</option>
+            <option value="Staff Behavior">Staff Behavior</option>
+            <option value="Internet Problem">Internet Problem</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="complaint-details">Complaint Details</label>
+          <textarea id="complaint-details" name="complaint_details" rows="4" required></textarea>
+        </div>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Complaint Submitted">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+        <button type="submit" class="btn">Submit Complaint</button>
+      </form>
+    </div>
+  </div>
+</section>
+
     <section class="location-map" style="padding: 60px 20px; background-color: #f9f9f9;">
   <div class="container" style="text-align: center;">
     <h2 class="section-title" style="color: #2c3e50; margin-bottom: 30px;">Visit Us</h2>
